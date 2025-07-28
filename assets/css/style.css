@@ -1,0 +1,47 @@
+/* Sidebar Styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  overflow-x: hidden;
+  transition: 0.4s ease;
+  padding-top: 60px;
+  border-right: 2px solid cyan;
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar a {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  color: cyan;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.openbtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 101;
+  background-color: cyan;
+  color: black;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px cyan;
+}
