@@ -60,13 +60,8 @@
   color: white;
   min-height: 100vh;
   background-color: #111;
-}
-
-/* Elden Ring Theme */
-.elden-ring {
-  background: url("images/eldenring-bg.jpg") center/cover no-repeat;
-  color: #d4af37;
-  text-shadow: 1px 1px 4px #000;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -79,54 +74,62 @@
   margin-bottom: 20px;
 }
 
-.elden-ring h1 {
-  color: #f7c948;
-  font-size: 52px;
-  font-family: "Garamond", serif;
+/* Malenia Theme */
+.malenia {
+  background-color: #1b0a0a; /* dark red tone */
+  color: #f2c1bd;
 }
 
-.elden-ring p {
-  color: #ffd700;
+.malenia h1 {
+  color: #ffcccb;
+  font-size: 52px;
+  font-family: "Garamond", serif;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.malenia p {
+  color: #ffe4e1;
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto 20px auto;
   font-family: "Georgia", serif;
+  text-shadow: 1px 1px 4px #000;
 }
 
-.elden-ring button {
+.malenia button {
   padding: 12px 28px;
   font-size: 16px;
-  background-color: #d4af37;
-  color: black;
+  background-color: #b22222; /* firebrick */
+  color: white;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 12px #d4af37;
+  box-shadow: 0 0 12px #b22222;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.elden-ring button:hover {
-  background-color: #f7c948;
-  box-shadow: 0 0 16px #f7c948;
+.malenia button:hover {
+  background-color: #ff6347; /* tomato */
+  box-shadow: 0 0 16px #ff6347;
 }
 
-/* Elden Ring Sidebar Color */
-body.elden-sidebar .sidebar {
-  background-color: #1c140a;
-  border-right: 2px solid #d4af37;
+/* Optional Sidebar Color Matching for Malenia Theme */
+body.malenia-sidebar .sidebar {
+  background-color: #2b0a0a;
+  border-right: 2px solid #b22222;
 }
 
-body.elden-sidebar .sidebar a {
-  color: #f7c948;
+body.malenia-sidebar .sidebar a {
+  color: #ffcccb;
 }
 
-body.elden-sidebar .sidebar a:hover {
-  background-color: #33240d;
+body.malenia-sidebar .sidebar a:hover {
+  background-color: #3a0f0f;
   color: white;
 }
 
-/* Video Background */
+/* For video background */
 .video-bg {
   position: absolute;
   top: 0;
@@ -137,54 +140,7 @@ body.elden-sidebar .sidebar a:hover {
   z-index: -1;
 }
 
-.hero.elden-ring,
-.hero.malenia-theme {
-  position: relative;
-  overflow: hidden;
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
-}
-
-/* Malenia Theme */
-.malenia-theme .hero-content h1,
-.malenia-theme .hero-content p {
-  color: #ffd700;
-  text-shadow: 0 0 10px #ff0000;
-}
-
-.malenia-theme .hero-content button {
-  padding: 12px 28px;
-  font-size: 16px;
-  background-color: #8b0000;
-  color: #ffd700;
-  font-weight: bold;
-  border: 1px solid #ffd700;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #ff0000;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.malenia-theme .hero-content button:hover {
-  background-color: #b22222;
-  color: white;
-  box-shadow: 0 0 15px #ff3333;
-}
-
-/* Optional: Malenia-specific sidebar colors */
-body.malenia-sidebar .sidebar {
-  background-color: #220000;
-  border-right: 2px solid #ffd700;
-}
-
-body.malenia-sidebar .sidebar a {
-  color: #ffd700;
-}
-
-body.malenia-sidebar .sidebar a:hover {
-  background-color: #330000;
-  color: white;
 }
