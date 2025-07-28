@@ -64,6 +64,8 @@
 
 .elden-ring {
   background: url("images/eldenring-bg.jpg") center/cover no-repeat;
+  color: #d4af37; /* gold text */
+  text-shadow: 1px 1px 4px #000;
 }
 
 .hero h1 {
@@ -76,17 +78,50 @@
   margin-bottom: 20px;
 }
 
-.hero button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: cyan;
-  color: black;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 0 10px cyan;
+/* Elden Ring Specific Overrides */
+.elden-ring h1 {
+  color: #f7c948;
+  font-size: 52px;
+  font-family: "Garamond", serif;
 }
 
-.hero button:hover {
-  background-color: white;
+.elden-ring p {
+  color: #ffd700;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-family: "Georgia", serif;
+}
+
+.elden-ring button {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #d4af37;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 12px #d4af37;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.elden-ring button:hover {
+  background-color: #f7c948;
+  box-shadow: 0 0 16px #f7c948;
+}
+
+/* Trying to make the sidebar change theme per page */
+body.elden-sidebar .sidebar {
+  background-color: #1c140a;
+  border-right: 2px solid #d4af37;
+}
+
+body.elden-sidebar .sidebar a {
+  color: #f7c948;
+}
+
+body.elden-sidebar .sidebar a:hover {
+  background-color: #33240d;
+  color: white;
 }
