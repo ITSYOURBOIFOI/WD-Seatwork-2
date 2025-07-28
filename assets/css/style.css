@@ -1,4 +1,11 @@
-/* Sidebar Styles */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar */
 .sidebar {
   height: 100%;
   width: 0;
@@ -44,4 +51,42 @@
   border: none;
   border-radius: 6px;
   box-shadow: 0 0 10px cyan;
+}
+
+/* Hero Sections */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  background-color: #111;
+}
+
+.elden-ring {
+  background: url("images/eldenring-bg.jpg") center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: cyan;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px cyan;
+}
+
+.hero button:hover {
+  background-color: white;
 }
