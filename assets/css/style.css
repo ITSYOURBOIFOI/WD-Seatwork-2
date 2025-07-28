@@ -62,9 +62,10 @@
   background-color: #111;
 }
 
+/* Elden Ring Theme */
 .elden-ring {
   background: url("images/eldenring-bg.jpg") center/cover no-repeat;
-  color: #d4af37; /* gold text */
+  color: #d4af37;
   text-shadow: 1px 1px 4px #000;
 }
 
@@ -78,7 +79,6 @@
   margin-bottom: 20px;
 }
 
-/* Elden Ring Specific Overrides */
 .elden-ring h1 {
   color: #f7c948;
   font-size: 52px;
@@ -111,7 +111,7 @@
   box-shadow: 0 0 16px #f7c948;
 }
 
-/* Trying to make the sidebar change theme per page */
+/* Elden Ring Sidebar Color */
 body.elden-sidebar .sidebar {
   background-color: #1c140a;
   border-right: 2px solid #d4af37;
@@ -126,7 +126,7 @@ body.elden-sidebar .sidebar a:hover {
   color: white;
 }
 
-/* For video background */
+/* Video Background */
 .video-bg {
   position: absolute;
   top: 0;
@@ -137,7 +137,8 @@ body.elden-sidebar .sidebar a:hover {
   z-index: -1;
 }
 
-.hero.elden-ring {
+.hero.elden-ring,
+.hero.malenia-theme {
   position: relative;
   overflow: hidden;
 }
@@ -145,4 +146,45 @@ body.elden-sidebar .sidebar a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
+}
+
+/* Malenia Theme */
+.malenia-theme .hero-content h1,
+.malenia-theme .hero-content p {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.malenia-theme .hero-content button {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #8b0000;
+  color: #ffd700;
+  font-weight: bold;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.malenia-theme .hero-content button:hover {
+  background-color: #b22222;
+  color: white;
+  box-shadow: 0 0 15px #ff3333;
+}
+
+/* Optional: Malenia-specific sidebar colors */
+body.malenia-sidebar .sidebar {
+  background-color: #220000;
+  border-right: 2px solid #ffd700;
+}
+
+body.malenia-sidebar .sidebar a {
+  color: #ffd700;
+}
+
+body.malenia-sidebar .sidebar a:hover {
+  background-color: #330000;
+  color: white;
 }
