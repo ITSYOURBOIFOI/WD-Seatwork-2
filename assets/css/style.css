@@ -60,8 +60,12 @@
   color: white;
   min-height: 100vh;
   background-color: #111;
-  position: relative;
-  overflow: hidden;
+}
+
+.elden-ring {
+  background: url("images/eldenring-bg.jpg") center/cover no-repeat;
+  color: #d4af37; /* gold text */
+  text-shadow: 1px 1px 4px #000;
 }
 
 .hero h1 {
@@ -74,73 +78,50 @@
   margin-bottom: 20px;
 }
 
-/* Malenia Theme */
-.malenia {
-  background-color: #1b0a0a; /* dark red tone */
-  color: #f2c1bd;
-}
-
-.malenia h1 {
-  color: #ffcccb;
+/* Elden Ring Specific Overrides */
+.elden-ring h1 {
+  color: #f7c948;
   font-size: 52px;
   font-family: "Garamond", serif;
-  text-shadow: 1px 1px 4px #000;
 }
 
-.malenia p {
-  color: #ffe4e1;
+.elden-ring p {
+  color: #ffd700;
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto 20px auto;
   font-family: "Georgia", serif;
-  text-shadow: 1px 1px 4px #000;
 }
 
-.malenia button {
+.elden-ring button {
   padding: 12px 28px;
   font-size: 16px;
-  background-color: #b22222; /* firebrick */
-  color: white;
+  background-color: #d4af37;
+  color: black;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 12px #b22222;
+  box-shadow: 0 0 12px #d4af37;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.malenia button:hover {
-  background-color: #ff6347; /* tomato */
-  box-shadow: 0 0 16px #ff6347;
+.elden-ring button:hover {
+  background-color: #f7c948;
+  box-shadow: 0 0 16px #f7c948;
 }
 
-/* Optional Sidebar Color Matching for Malenia Theme */
-body.malenia-sidebar .sidebar {
-  background-color: #2b0a0a;
-  border-right: 2px solid #b22222;
+/* Optional: Gold sidebar override (only if needed for Elden Ring page) */
+body.elden-sidebar .sidebar {
+  background-color: #1c140a;
+  border-right: 2px solid #d4af37;
 }
 
-body.malenia-sidebar .sidebar a {
-  color: #ffcccb;
+body.elden-sidebar .sidebar a {
+  color: #f7c948;
 }
 
-body.malenia-sidebar .sidebar a:hover {
-  background-color: #3a0f0f;
+body.elden-sidebar .sidebar a:hover {
+  background-color: #33240d;
   color: white;
-}
-
-/* For video background */
-.video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
 }
