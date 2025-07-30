@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hero Section - Elden Ring</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WD Seatwork 2 - Page 3</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; background-color: #0f0f0f; color: #f5f5f5;">
+<body>
 
-  <!-- Hero Section 1: Elden Ring Theme -->
-  <section style="position: relative; height: 100vh; background: url('images/eldenring-bg.jpg') center/cover no-repeat;">
-    <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
-    
-    <div style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;">
-      <h1 style="font-size: 3em; color: gold; margin-bottom: 10px;">Elden Ring</h1>
-      <p style="font-size: 1.2em; max-width: 600px;">Rise, Tarnished. Explore the Lands Between and forge your destiny in this dark and beautiful world of action and mystery.</p>
-      <button style="margin-top: 20px; padding: 12px 24px; font-size: 1em; background-color: gold; color: #000; border: none; border-radius: 6px; cursor: pointer;">
-        Enter the Realm
-      </button>
+  <button class="openbtn" onclick="toggleSidebar()">☰ Pages</button>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="../index.html">Page 1</a>
+    <a href="hero2.html">Page 2</a>
+    <a href="hero3.html">Page 3</a>
+    <a href="hero4.html">Page 4</a>
+    <a href="hero5.html">Page 5</a>
+  </div>
+
+  <section class="hero cyberpunk">
+    <div class="neon-overlay"></div>
+    <div class="hero-content">
+      <h1 class="typewriter">Welcome to Night City</h1>
+      <p>High-tech, low-life. Dive into the cyberpunk universe filled with neon and danger.</p>
     </div>
   </section>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("mySidebar").classList.toggle("active");
+    }
+  </script>
 
 </body>
 </html>

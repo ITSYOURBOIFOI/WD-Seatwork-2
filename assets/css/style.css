@@ -149,3 +149,34 @@
 .carousel-img.active {
   display: block;
 }
+
+/* Cyberpunk Hero */
+.cyberpunk {
+  background: url('../assets/images/cybercity.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 100vh;
+  color: #00ffe7;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cyberpunk .neon-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.6);
+  z-index: -1;
+}
+.cyberpunk h1 {
+  font-size: 48px;
+  animation: typing 3s steps(30) 1s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ffe7;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
