@@ -151,12 +151,12 @@
 .geometry-dash .text-overlay h1 {
   font-size: 42px;
   margin-bottom: 10px;
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 10px hsl(61, 100%, 50%);
 }
 
 .geometry-dash .text-overlay p {
   font-size: 18px;
-  color: #66ffff;
+  color: hsl(61, 100%, 50%);;
 }
 
 /* Cyberpunk Hero */
