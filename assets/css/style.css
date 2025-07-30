@@ -105,21 +105,20 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #0f0f0f, #222);
-  color: #00ffff;
-  font-family: 'Orbitron', sans-serif;
   overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
 }
 
-/* Fullscreen Carousel */
+/* Fullscreen Carousel Background */
 .carousel {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  overflow: hidden;
 }
 
 .carousel-img {
@@ -136,12 +135,12 @@
   z-index: 1;
 }
 
-/* Text box overlay */
+/* Text Box Overlay */
 .geometry-dash .text-overlay {
   position: absolute;
   top: 40px;
-  left: 180px;
-  background-color: rgba(0, 0, 0, 0.6);
+  left: 40px;
+  background: rgba(0, 0, 0, 0.65);
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px #00ffff;
@@ -149,9 +148,15 @@
   z-index: 2; /* stays above carousel */
 }
 
-.geometry-dash .text-overlay h1,
-.geometry-dash .text-overlay p {
+.geometry-dash .text-overlay h1 {
+  font-size: 42px;
   margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.geometry-dash .text-overlay p {
+  font-size: 18px;
+  color: #66ffff;
 }
 
 /* Cyberpunk Hero */
