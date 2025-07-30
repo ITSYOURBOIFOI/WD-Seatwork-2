@@ -156,3 +156,68 @@
   font-family: "Georgia", serif;
   text-shadow: 1px 1px 3px #000;
 }
+
+/* Geometry Dash Section */
+.geometry-dash {
+  background: linear-gradient(135deg, #0f0f0f, #222);
+  color: #00ffff;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.geometry-dash h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 1px 1px 8px #00ffff;
+}
+
+.geometry-dash p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #66ffff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-img {
+  display: none;
+  width: 100%;
+  border: 4px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel-controls {
+  margin-top: 20px;
+}
+
+.carousel-controls button {
+  background-color: #00ffff;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ffff;
+  transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+  background-color: #66ffff;
+}
