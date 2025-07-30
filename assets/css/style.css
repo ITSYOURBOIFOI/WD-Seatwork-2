@@ -46,7 +46,9 @@
   border-radius: 6px;
   box-shadow: 0 0 10px cyan;
 }
+
 /* Elden Ring Hero */
+
 /* Video Background */
 .video-bg {
   position: fixed;
@@ -58,14 +60,13 @@
   z-index: -1;
 }
 
-/* Hero Section - Text Slightly Above Center */
-.hero {
+.hero.elden-ring {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 140px;
   text-align: center;
   color: #f7c948;
   font-family: "Garamond", serif;
