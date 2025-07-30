@@ -1,11 +1,11 @@
-/* Basic Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Sidebar */
+/* Sidebar - unchanged */
 .sidebar {
   height: 100%;
   width: 0;
@@ -19,11 +19,7 @@
   padding-top: 60px;
   border-right: 2px solid cyan;
 }
-
-.sidebar.active {
-  width: 250px;
-}
-
+.sidebar.active { width: 250px; }
 .sidebar a {
   padding: 12px 24px;
   text-decoration: none;
@@ -32,12 +28,10 @@
   display: block;
   transition: 0.2s;
 }
-
 .sidebar a:hover {
   background-color: #1a1a1a;
   color: white;
 }
-
 .openbtn {
   position: fixed;
   top: 20px;
@@ -53,64 +47,7 @@
   box-shadow: 0 0 10px cyan;
 }
 
-/* Hero Sections */
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  color: white;
-  min-height: 100vh;
-  background-color: #111;
-}
-
-.elden-ring {
-  background: url("images/eldenring-bg.jpg") center/cover no-repeat;
-  color: #d4af37; /* gold text */
-  text-shadow: 1px 1px 4px #000;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* Elden Ring Specific Overrides */
-.elden-ring h1 {
-  color: #f7c948;
-  font-size: 52px;
-  font-family: "Garamond", serif;
-}
-
-.elden-ring p {
-  color: #ffd700;
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-  font-family: "Georgia", serif;
-}
-
-.elden-ring button {
-  padding: 12px 28px;
-  font-size: 16px;
-  background-color: #d4af37;
-  color: black;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 12px #d4af37;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.elden-ring button:hover {
-  background-color: #f7c948;
-  box-shadow: 0 0 16px #f7c948;
-}
-
+/* Video Background */
 .video-bg {
   position: fixed;
   top: 0;
@@ -121,103 +58,72 @@
   z-index: -1;
 }
 
-/* Ensure hero section uses full viewport height and overlays content correctly */
-.hero.elden-ring {
-  position: relative;
+/* Hero Section - Text Slightly Above Center */
+.hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #f7c948;
+  padding-top: 100px;
   text-align: center;
-  padding: 0 20px;
-  z-index: 1;
-  background: transparent;
-  padding-bottom: 300px; 
-}
-
-.hero-content {
-  z-index: 1;
-}
-
-.elden-ring h1 {
   color: #f7c948;
-  font-size: 52px;
   font-family: "Garamond", serif;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 48px;
   text-shadow: 2px 2px 4px #000;
 }
-
-.elden-ring p {
-  color: #ffd700;
+.hero p {
   font-size: 20px;
-  max-width: 700px;
-  margin: 20px auto;
-  font-family: "Georgia", serif;
   text-shadow: 1px 1px 3px #000;
 }
 
-/* Geometry Dash Section */
+/* Geometry Dash Hero */
 .geometry-dash {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(135deg, #0f0f0f, #222);
   color: #00ffff;
-  text-align: center;
-  padding: 100px 20px;
-  min-height: 100vh;
   font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
 }
 
+/* Top-left Text */
 .geometry-dash h1 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
   font-size: 48px;
-  margin-bottom: 20px;
-  color: #00ffff;
   text-shadow: 1px 1px 8px #00ffff;
 }
-
 .geometry-dash p {
+  position: absolute;
+  top: 100px;
+  left: 40px;
   font-size: 20px;
-  margin-bottom: 40px;
   color: #66ffff;
   text-shadow: 1px 1px 4px #000;
 }
 
-/* Carousel */
+/* Fullscreen Carousel */
 .carousel {
-  position: relative;
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
 .carousel-img {
   display: none;
   width: 100%;
-  border: 4px solid #00ffff;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00ffff;
+  height: 100%;
+  object-fit: cover;
 }
-
 .carousel-img.active {
   display: block;
-}
-
-.carousel-controls {
-  margin-top: 20px;
-}
-
-.carousel-controls button {
-  background-color: #00ffff;
-  color: black;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  margin: 0 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 0 8px #00ffff;
-  transition: background-color 0.3s;
-}
-
-.carousel-controls button:hover {
-  background-color: #66ffff;
 }
