@@ -22,21 +22,17 @@
 
   <!-- Geometry Dash Section -->
   <section class="hero geometry-dash">
-    <div class="text-overlay">
-      <h1>Geometry Dash</h1>
-      <p>Jump, fly, and flip your way through danger in this rhythm-based platformer!</p>
-    </div>
-
-    <!-- Carousel -->
+    <!-- Carousel Background -->
     <div class="carousel">
       <img src="../assets/images/gd1.jpg" alt="GD Level 1" class="carousel-img active">
       <img src="../assets/images/gd2.jpg" alt="GD Level 2" class="carousel-img">
       <img src="../assets/images/gd3.jpg" alt="GD Level 3" class="carousel-img">
+    </div>
 
-      <div class="carousel-controls">
-        <button onclick="changeSlide(-1)">❮</button>
-        <button onclick="changeSlide(1)">❯</button>
-      </div>
+    <!-- Text Box Overlay -->
+    <div class="text-overlay">
+      <h1>Geometry Dash</h1>
+      <p>Jump, fly, and flip your way through danger in this rhythm-based platformer!</p>
     </div>
   </section>
 
@@ -45,26 +41,21 @@
       document.getElementById("mySidebar").classList.toggle("active");
     }
 
-    // Carousel
-  window.onload = function () {
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.carousel-img');
+    // Pure autoplay carousel
+    window.onload = function () {
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.carousel-img');
 
-    function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove('active'));
-      slides[index].classList.add('active');
-    }
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+      }
 
-    function changeSlide(n) {
-      slideIndex = (slideIndex + n + slides.length) % slides.length;
-      showSlide(slideIndex);
-    }
-
-    // Auto slide every 3s
-    setInterval(() => changeSlide(1), 3000);
-  };
-</script>
-    }, 3000);
+      setInterval(() => {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }, 3000); // change every 3s
+    };
   </script>
 
 </body>

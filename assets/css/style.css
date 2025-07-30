@@ -114,40 +114,6 @@
   overflow: hidden;
 }
 
-.geometry-dash .text-overlay {
-  position: absolute;
-  top: 40px;
-  left: 180px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00ffff;
-  max-width: 500px;
-  z-index: 1;
-}
-.geometry-dash .text-overlay h1,
-.geometry-dash .text-overlay p {
-  position: static;
-  margin-bottom: 10px;
-}
-
-/* Top-left Text */
-.geometry-dash h1 {
-  position: absolute;
-  top: 40px;
-  left: 200px;
-  font-size: 48px;
-  text-shadow: 1px 1px 8px #00ffff;
-}
-.geometry-dash p {
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  font-size: 20px;
-  color: #66ffff;
-  text-shadow: 1px 1px 4px #000;
-}
-
 /* Fullscreen Carousel */
 .carousel {
   width: 100vw;
@@ -158,23 +124,37 @@
   left: 0;
   z-index: -1;
 }
+
 .carousel-img {
-  display: none;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.carousel-img.active {
-  display: block;
-}
-.carousel-img {
-  position: absolute;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+
 .carousel-img.active {
   opacity: 1;
   z-index: 1;
+}
+
+/* Text box overlay */
+.geometry-dash .text-overlay {
+  position: absolute;
+  top: 40px;
+  left: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff;
+  max-width: 500px;
+  z-index: 2; /* stays above carousel */
+}
+
+.geometry-dash .text-overlay h1,
+.geometry-dash .text-overlay p {
+  margin-bottom: 10px;
 }
 
 /* Cyberpunk Hero */
