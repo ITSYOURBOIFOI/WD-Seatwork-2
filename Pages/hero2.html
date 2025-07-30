@@ -36,27 +36,32 @@
     </div>
   </section>
 
-  <script>
-    function toggleSidebar() {
-      document.getElementById("mySidebar").classList.toggle("active");
+<script>
+  function toggleSidebar() {
+    document.getElementById("mySidebar").classList.toggle("active");
+  }
+
+  window.onload = function () {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-img');
+
+    function showSlide() {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+      });
+      slides[slideIndex].classList.add('active');
     }
 
-    // Pure autoplay carousel
-    window.onload = function () {
-      let slideIndex = 0;
-      const slides = document.querySelectorAll('.carousel-img');
+    // Show first image
+    showSlide();
 
-      function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[index].classList.add('active');
-      }
-
-      setInterval(() => {
-        slideIndex = (slideIndex + 1) % slides.length;
-        showSlide(slideIndex);
-      }, 3000); // change every 3s
-    };
-  </script>
+    // Change every 3 seconds
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide();
+    }, 3000);
+  };
+</script>
 
 </body>
 </html>
