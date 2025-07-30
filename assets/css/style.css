@@ -179,9 +179,16 @@
 
 /* Cyberpunk Hero */
 .cyberpunk {
-  background-color: red;
+  background: url('../assets/images/cybercity.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 100vh;
+  color: #00ffe7;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .cyberpunk .neon-overlay {
   position: absolute;
   width: 100%;
