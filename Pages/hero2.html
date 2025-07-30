@@ -22,8 +22,10 @@
 
   <!-- Geometry Dash Section -->
   <section class="hero geometry-dash">
-    <h1>Geometry Dash</h1>
-    <p>Jump, fly, and flip your way through danger in this rhythm-based platformer!</p>
+    <div class="text-overlay">
+      <h1>Geometry Dash</h1>
+      <p>Jump, fly, and flip your way through danger in this rhythm-based platformer!</p>
+    </div>
 
     <!-- Carousel -->
     <div class="carousel">
@@ -43,7 +45,7 @@
       document.getElementById("mySidebar").classList.toggle("active");
     }
 
-    // Simple carousel
+    // Carousel
     let slideIndex = 0;
     const slides = document.querySelectorAll('.carousel-img');
     setInterval(() => {

@@ -114,6 +114,23 @@
   overflow: hidden;
 }
 
+.geometry-dash .text-overlay {
+  position: absolute;
+  top: 40px;
+  left: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff;
+  max-width: 500px;
+  z-index: 1;
+}
+.geometry-dash .text-overlay h1,
+.geometry-dash .text-overlay p {
+  position: static;
+  margin-bottom: 10px;
+}
+
 /* Top-left Text */
 .geometry-dash h1 {
   position: absolute;
@@ -149,6 +166,15 @@
 }
 .carousel-img.active {
   display: block;
+}
+.carousel-img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-img.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 /* Cyberpunk Hero */
