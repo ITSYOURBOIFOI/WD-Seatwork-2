@@ -43,15 +43,15 @@
       document.getElementById("mySidebar").classList.toggle("active");
     }
 
-    let currentSlide = 0;
+    // Simple carousel
+    let slideIndex = 0;
     const slides = document.querySelectorAll('.carousel-img');
-
-    function changeSlide(direction) {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + direction + slides.length) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }
+    setInterval(() => {
+      slides[slideIndex].classList.remove('active');
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }, 3000);
   </script>
-
+  
 </body>
 </html>

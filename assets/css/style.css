@@ -46,7 +46,7 @@
   border-radius: 6px;
   box-shadow: 0 0 10px cyan;
 }
-
+/* Elden Ring Hero */
 /* Video Background */
 .video-bg {
   position: fixed;
@@ -80,6 +80,28 @@
   text-shadow: 1px 1px 3px #000;
 }
 
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+.btn.gold {
+  background-color: #d4af37;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #d4af37;
+}
+.btn.gold:hover {
+  background-color: #b88c1d;
+  color: white;
+}
+
+
 /* Geometry Dash Hero */
 .geometry-dash {
   position: relative;
@@ -95,14 +117,14 @@
 .geometry-dash h1 {
   position: absolute;
   top: 40px;
-  left: 40px;
+  left: 200px;
   font-size: 48px;
   text-shadow: 1px 1px 8px #00ffff;
 }
 .geometry-dash p {
   position: absolute;
   top: 100px;
-  left: 40px;
+  left: 200px;
   font-size: 20px;
   color: #66ffff;
   text-shadow: 1px 1px 4px #000;
